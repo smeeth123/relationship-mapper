@@ -1,0 +1,42 @@
+<div class="relationship-map-dialog relationship-map-defaults-shell">
+  <form class="relationship-map-defaults-config" onsubmit="return false;">
+    <h2>Cards</h2>
+    <div class="form-group"><label>Card Tint</label><input type="color" name="cardTint" value="{{cardTint}}"></div>
+    <div class="form-group"><label>Card Text Color</label><input type="color" name="cardTextColor" value="{{cardTextColor}}"></div>
+    <div class="form-group"><label>Card Font</label><select name="cardFontFamily">
+      {{#each cardFontOptions}}
+        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+      {{/each}}
+    </select></div>
+    <div class="form-group"><label>Card Font Size</label><input type="number" name="cardFontSize" min="8" max="72" value="{{cardFontSize}}"></div>
+    <div class="form-group"><label>Card Width</label><input type="number" name="cardWidth" min="110" max="480" value="{{cardWidth}}"></div>
+    <div class="form-group"><label><input type="checkbox" name="snapCardsToGrid" {{#if snapCardsToGrid}}checked{{/if}}> Snap card position and size to grid</label></div>
+
+    <h2>Connections</h2>
+    <div class="form-group"><label>Connection Color</label><input type="color" name="connectionColor" value="{{connectionColor}}"></div>
+    <div class="form-group"><label>Connection Width</label><div class="rmp-range-row"><input type="range" name="connectionWidth" min="1" max="30" step="1" value="{{connectionWidth}}" oninput="this.nextElementSibling.textContent=this.value"><span>{{connectionWidth}}</span></div></div>
+    <div class="form-group"><label>Default Line Style</label><select name="connectionStyle">
+      <option value="solid" {{#if styleSolid}}selected{{/if}}>Solid</option>
+      <option value="dashed" {{#if styleDashed}}selected{{/if}}>Dashed</option>
+      <option value="dotted" {{#if styleDotted}}selected{{/if}}>Dotted</option>
+    </select></div>
+    <div class="form-group"><label>Default Arrows</label><select name="connectionDirection">
+      <option value="none" {{#if dirNone}}selected{{/if}}>No arrows</option>
+      <option value="from-to" {{#if dirFromTo}}selected{{/if}}>Source → Target</option>
+      <option value="to-from" {{#if dirToFrom}}selected{{/if}}>Target → Source</option>
+      <option value="both" {{#if dirBoth}}selected{{/if}}>Both</option>
+    </select></div>
+    <div class="form-group"><label>Default Connection Label</label><input type="text" name="connectionLabel" value="{{connectionLabel}}" placeholder="Optional"></div>
+    <div class="form-group"><label>Connection Label Font</label><select name="connectionLabelFontFamily">
+      {{#each connectionLabelFontOptions}}
+        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+      {{/each}}
+    </select></div>
+    <div class="form-group"><label>Connection Label Font Size</label><input type="number" name="connectionLabelFontSize" min="8" max="72" value="{{connectionLabelFontSize}}"></div>
+    <div class="form-group"><label>Connection Label Text Color</label><input type="color" name="connectionLabelColor" value="{{connectionLabelColor}}"></div>
+    <div class="form-group"><label>Connection Label Background</label><input type="color" name="connectionLabelBackground" value="{{connectionLabelBackground}}"></div>
+  </form>
+  <footer class="sheet-footer flexrow relationship-map-defaults-footer">
+    <button type="button" data-action="save-defaults">Save Defaults</button>
+  </footer>
+</div>

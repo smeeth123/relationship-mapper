@@ -1,0 +1,22 @@
+{
+  "id": "relationship-mapper",
+  "name": "relationship-mapper",
+  "title": "Relationship Mapper",
+  "description": "Canvas-native relationship mapping tools for Foundry VTT.",
+  "version": "0.2.0",
+  "authors": [
+    {
+      "name": "smeeth123"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "esmodules": [
+    "scripts/relationship-mapper.js"
+  ],
+  "styles": [
+    "styles/relationship-mapper.css"
+  ]
+}

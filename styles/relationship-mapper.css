@@ -1,0 +1,135 @@
+.rmp-token-hud-button i { pointer-events: none; }
+.relationship-map-dialog .form-group { margin-bottom: 8px; }
+.relationship-map-dialog input[type="text"],
+.relationship-map-dialog input[type="number"],
+.relationship-map-dialog input[type="color"],
+.relationship-map-dialog select { width: 100%; }
+
+.relationship-map-card-controls {
+  position: fixed;
+  z-index: 60;
+  display: block;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.relationship-map-card-top-controls {
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  pointer-events: auto;
+}
+
+.relationship-map-card-controls button {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(241,224,183,.62);
+  border-radius: 5px;
+  background: rgba(42,28,16,.82);
+  color: #f7ead0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,.35);
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.relationship-map-card-controls button i {
+  pointer-events: none;
+  font-size: 13px;
+  line-height: 1;
+  width: 1em;
+  height: 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.relationship-map-card-controls button:hover {
+  background: rgba(70,46,26,.96);
+  color: #fff4d8;
+}
+
+.relationship-map-card-resize {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  pointer-events: auto;
+  cursor: nwse-resize !important;
+  border-radius: 50% !important;
+}
+.relationship-map-dialog textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rmp-range-row {
+  display: grid;
+  grid-template-columns: 1fr 3.5em;
+  gap: 8px;
+  align-items: center;
+}
+
+.rmp-range-row span {
+  text-align: center;
+  border: 1px solid var(--color-border-light-primary, rgba(0,0,0,.25));
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+
+body.rmp-canvas-pointer-active .relationship-map-card-controls,
+body.rmp-canvas-pointer-active .relationship-map-card-controls * {
+  pointer-events: none !important;
+}
+
+/* Keep the long defaults/settings form usable in Foundry's AppV2 window. */
+.relationship-map-defaults-config {
+  max-height: min(72vh, 680px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+.relationship-map-defaults-config footer.sheet-footer {
+  position: sticky;
+  bottom: 0;
+  background: rgba(20, 14, 10, 0.92);
+  padding-top: 8px;
+  margin-top: 10px;
+  z-index: 1;
+}
+.application .relationship-map-defaults-config,
+.window-app .relationship-map-defaults-config {
+  max-height: calc(100vh - 190px);
+}
+.relationship-map-defaults-shell {
+  display: flex;
+  flex-direction: column;
+  max-height: min(78vh, 760px);
+}
+.relationship-map-defaults-shell .relationship-map-defaults-config {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;
+}
+.relationship-map-defaults-footer {
+  flex: 0 0 auto;
+  margin-top: 10px;
+}
