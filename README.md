@@ -1,10 +1,10 @@
 # Relationship Mapper
 
-<img width="1258" height="713" alt="Screenshot 2026-06-11 at 1 34 15 PM" src="https://github.com/user-attachments/assets/3a9f270f-2980-4e64-adfe-011210cc5f77" />
-
 Canvas-native relationship mapping tools for Foundry VTT.
 
 Relationship Mapper allows you to create and manage relationship boards directly on the Foundry canvas. Create cards from Actors, Items, or Tokens and connect them with editable, directional relationships.
+
+<img width="1258" height="713" alt="Screenshot 2026-06-11 at 1 34 15 PM" src="https://github.com/user-attachments/assets/3a9f270f-2980-4e64-adfe-011210cc5f77" />
 
 
 ---
