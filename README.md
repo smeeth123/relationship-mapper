@@ -111,5 +111,5 @@ Includes enhanced visual support for **Stonetop**.
 Install via manifest URL:
 
 ```text
-https://github.com/YOUR-GITHUB-USERNAME/relationship-mapper/releases/latest/download/module.json
+https://github.com/smeeth123/relationship-mapper/releases/latest/download/module.json
 ```
