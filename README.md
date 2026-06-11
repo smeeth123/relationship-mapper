@@ -48,7 +48,8 @@ Open a Token's HUD and click the Relationship Mapper button.
 1. Click the **Connect** button on a card.
 2. Click a second card to create a relationship.
 3. Edit the connection label, color, style, and direction.
-4. Connections can be edited from either endpoint.
+4. Connections can be edited by right-clicking the connection line.
+5. Connection labels can be quick-edited by double-clicking on the label.
 
 Supported directions:
 
